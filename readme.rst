@@ -49,8 +49,8 @@ The following existing markup languages were considered while perparing MathMD:
 
 * AsciiMath: an easy-to-write markup language for mathematics that offers automated conversion to images (website http://asciimath.org/)
 * LaTeX: a document prepration system and typesetting language designed for printing or corresponding digital distribution. LaTeX is widely used in
-academia for the communication and publication of scientific documents 
-in many fields. (see wiki article `here <https://en.wikipedia.org/wiki/LaTeX>`_)
+  academia for the communication and publication of scientific documents 
+  in many fields. (see wiki article `here <https://en.wikipedia.org/wiki/LaTeX>`_)
 * programming languages: of course, many programming languages support simple equations written in plain text
 
 .. note:: All of these approaches have a rather different objectives 
@@ -62,7 +62,7 @@ Documentations
 The specifications are currently only available in Finnish.
 
 * Specifications in Finnish (`PDF <docs/mathmd.pdf>`_)
-* Specifications in Finnish (TeX `document <docs/mathmd.tex>` and `contents <docs/body.tex>`_)
+* Specifications in Finnish (TeX `document <docs/mathmd.tex>`_ and `contents <docs/body.tex>`_)
 
 Todo and future plans
 ---------------------
