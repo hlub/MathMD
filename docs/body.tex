@@ -1,0 +1,469 @@
+\section{Yleistä}
+% analyysi, kompleksiluvut
+% todo: yhtenäistä taulukot
+Tarve matematiikan ilmaisemiselle digitaalisessa muodossa kasvaa jatkuvasti, eikä se rajoitu pelkästään näkövammaisiin.
+Monista kehittyneemmistä tekstinkäsittelyohjelmista löytyy nykypäivänä työkalut kaavojen muotoiluun ja erikoissymbolien tuottamiseen.
+Tällaisia ominaisuuksia ei kuitenkaan useimmiten koeta kovin käytettäviksi, sillä kaavan rakentaminen voi vaatia paljon hiiren käyttöä ja erinäisissä valikoissa 
+kiertelyä.
+Jokaisen ohjelman toteuttama kaavan muokkaus on lisäksi erilainen ja joka paikassa näitä mahdollisuuksia ei oleollenkaan saatavilla.
+Esimerkiksi erinäiset pikaviestimet valtaavat alaa viestinnässä, mutta niistä harvoin löytyy erillisiä keinoja matematiikan ilmaisemiseen.
+
+%Matematiikkaa kirjoitetaan yhä enemmän tietokoneen näppäimistöllä. 
+%Tämä ei päde pelkästään näkövammaisiin, vaan kaikkiin muihinkin.
+%Kaavojen muotoilu ja erikoissymbolien käyttäminen löytyvät ominaisuuksina joistan tekstinkäsittelyohejlmista, mutta 
+%ne eivät ole kovin käteviä ja samaa mahdollisuutta ei joka tilanteessa ole.
+
+Tämän oppaan on tarkoitus tarjota kyseiseen ongelmaan ratkaisuna ikään kuin matematiikan translitterointi, joka on tuttu menetelmä eri kielien symbolien 
+eriäväisyyksien hallinnasta.
+Yhteisymmärryksen saavuttamiseksi tarvitsemme yhtenäisen ja silti tiiviin tavan esittää matematiikasta tuutuja merkintöjä kuten esimerkiksi kreikkalaisia aakkosia.
+Tavoitteena on esittää asiat selkeästi ilman väärinkäsityksen mahdollisuuksia, mutta samalla mahdollisimman kompaktissa muodossa.
+Toisaalta matematiikka on kehittyvä kieli, jonka käytölle ei pitäisi myöskään asettaa liian tiukkoja rajotteita.
+Esimerkiksi merkintöjen lyhentämismahdollisuudet ovat tärkeässä asemassa, jotta voidaan estää liian pitkiksi tai monimutkaisisksi paisuvat kokonaisuudet.
+Tällaiseen tarvitaan ennemmin joukko yleisiä käytäntöjä kuin tarkka ennalta kirjoitettu lista kaikista mdhollisista lyhenteistä.
+
+Merkintöjä suunniteltaessa vaikutteita on otettu saman ongelman aiemmista ratkaisuyrityksistä: ohjelmointikielistä, LaTeX:sta sekä ASCIImath:sta.
+Yksinkertaisen aritmetiikan ilmaiseminen on tärkeä osa mitä tahansa ohjelmointikieltä ja tältä osin merkinnät ovat usein hyvin vakiintuneita eri kielten välillä.
+LaTeX on tekstin ladontaan suunnattu kieli, joka pyrkii lopputuloksen visuaaliseen täsmällisyyteen itse lähdekoodin luettavuuden ja ymmärrettävyyden 
+kustannuksella.
+LaTeX-koodin tehtävänä on esittää matematiikkaa painetussa muodossa. Sellaisenaan se siis sisältää itse matematiikan kannalta täysin turhaa tietoa.
+Toisaalta LaTeX on niin laajalti käytetty, että yhteneväisyydet sen kanssa auttavat merkintöjen ymmärrettävyyttä.
+ASCIImath puolestaan koittaa olla syntaksiltaan yksinertaisempi.
+Siinä on pyritty sanallistamaan ja lyhentämään käytetyt symbolit, joten sekään 
+ei oikeastaan kuvaa matematiikkaa, vaan pyrkii jäljittelemään sen visuaalista esitystä.
+ASCIImathin merkinnät tuppaavat muodostumaan tarpeettoman pitkiksi tai ovat epäintuitiivisia.
+
+Jokainen merkki esiintyy aina kontekstissa. Tästä on hyötyä siinä, ettei merkintöjen täydy olla universaalisti yksilöllisiä. Matematiikassa on jopa tyypillistä 
+määritellä uusia operaattoreita tai ominaisuuksia vain tiettyä tarkoitusta varten. On siis hyvä muistaa, että kaikkea voi lyhentää tarvittaessa ja omia merkintöjä 
+voi hyvin käyttää. Asia pitää vain selittää huolellisesti auki.
+
+\section{Muuttujat ja muut symbolit}
+Yksinertaiset muuttujat ilmaistaan tavallisina kirjaimina kuten esimerkiksi \verb$x$ ja \verb$y$.
+Nämä ovat tyypillisesti yhden kirjaimen mittaisia ja siksi erottuvat helposti toisistaan yhteenkin kirjoitettuina.
+Yleensä muuttujia erottaa kuitenkin jokin operaattori, sulku tai väli.
+
+Kaikki erikoisemmat symbolit niiden käyttötarkoituksesta huolimatta voidaan ilmaista sanallisessa muodossa.
+Esimerkiksi kreikkalaisten aakkoston ensimmäiset aakkoset voi kirjoittaa muodossa alpha, beta ja gamma.
+Käytettyjen sanallisten muotojen tulisi olla mahdollisimman selkeitä ja lyhyitä.
+Englannin kieliset termit ymmärretään laajemmin ja ne ovat usein myös suomen kielisiä vastineita lyhyempiä.
+Yleensä tälaiset erikoismerkityksen omaavat sanat eivät ole vaarassa sekoittua muuttujina käytettyihin kirjaimiin.
+
+Sanallisia muotoja voi myös lyhentää.
+Jotkin lyhenteen ovat vakiintuneita ja siksi ymmärrettäviä sellaisenaan,
+mutta uuden erikoissymbolin tai lyhenteen voi ottaa koska vain käyttöön avaamalla sen merkityksen lukijalle kirjan, luvun, tehtävänannon taikka tehtävän alussa.
+Voidaan esimerkiksi sanoa, että merkitään jotain $+$-operaattoria muistuttavaa uutta operaattoria symbolilla \verb$\+$.
+Lyhenteet voivat olla jopa kirjaimen mittaisia, kuten joukko-opin leikkaus \verb$\i$ ja yhdiste \verb$\u$.
+Lyhyiden lyhenteiden eteen merkitään etuliitteeksi \verb$\$-merkki, jotta ne erottuisivat tavallisista muuttujista.
+
+Ylä- ja alaindeksejä voi olla millä tahansa symbolilla.
+Alaindeksi merkitään alaviivalla ja yläindeksi potenssimerkillä.
+Jos symbolilla on sekä ala- että yläindeksi, suositaan järjestystä, jossa alaindeksi kirjoitetaan ensin.
+Yhtä merkkiä pidemmät ala- ja yläindeksit ilmaistaan aaltosulkeiden sisällä.
+
+Joskus muuttujia erotetaan toisistaan koristelemalla ne erilaisilla lisämerkeillä kuten hattu-merkillä.
+Sillä ei sinänsä ole väliä, onko käytetty merkki juurikin hattu, joten
+tällaiset tilanteet voi hoitaa lisäämällä jonkin vähemmän käytetyn merkin symbolin perään.
+Esimerkiksi muuttujaa $x$ voisi koristella vaikka muotoon: \verb$x'$, \verb$x`$, \verb$x"$ tai \verb!x$!.
+Sen sijaan tulisi välttää merkintöjä kuten \verb$x^$ tai \verb$x~$, jotka voivat helposti sekoittua muiden merkkien kanssa.
+
+\section{Realiluvut}
+Luvut merkitään yhteen kirjoitetuin numeroin.
+Pidemmät luvut voi ryhmitellä listeillä kolmen numeron sarjoihin.
+Desimaaliosa erotellaan tavalliseen tapaan pilkulla.
+
+Negatiivinen luku merkitään viivalla, esimerkiksi $-1$ ja vastaavasti positiivisen luvun positiivisuutta voi korostaa lisäämällä plussan, $+1$.
+Etumerkit ja luvut kirjoitetaan yhteen.
+
+{\bf Murtoluvut} merkitään jakolaskuina, koska näillä ei ole mitään eroa.
+Vastaavasti {\bf sekaluvun} voi ilmaista plussalla. Esimerkiksi kolme kokonaista ja yksi neljäsosa on \verb$3+1/4$.
+Jos haluaa korostaa, että kyseessä on murto- tai sekaluku, sen voi kirjoittaa yhteen ja ympäröidä välein jossain kaavassa.
+
+{\bf Prosentit} eli sadasosat merkitään loogisesti prosenttimerkillä \verb$%$ ja {\bf promillea} eli tuhannesosia merkinnällä \verb$:%$.
+
+{\bf Ääretöntä} ilmaistaan sanalla infty ja se voidaan lyhentää merkinnällä \verb$\8$.
+Ääretön-symbolin eteen voi tavallisesti merkitä etumerkin $-$ tai $+$.
+
+Realiakselin väleejä ilmaistaan hakasulkein, joiden suunta määrää välin avoimmuuden.
+{\bf Suljettu väli} pisteiden $a$ ja $b$ välillä ilmaistaan merkinnällä \verb$[a,b]$.
+Vastaava {\bf avoin väli} on puolestaan \verb$]a,b[$.
+Kyseessä on {\bf puoliavoin väli}, jos molemmat sulut ovat saman suuntaiset: 
+oikealta avoin väli on \verb$[a,b[$ ja vasemmalta avoin \verb$]a,b]$.
+Välit ovat joukkoja, joiden alkioilla on järjestys.
+
+%Kaikki symbolit on mahdollista välttää käyttämällä sanallista ilmaisua kuten kreikkalaisten aakkosten kohdalla.
+%Yleensä tälaiset erikoismerkityksen omaavat sanat eivät ole vaarassa sekoittua muuttujina käytettyihin kirjaimiin.
+%Merkintöjä voi selkiyttää lisäämällä erikoismerkin eteen \verb$\$-merkin.
+%Erityisesti symboleista käytettävät lyhenteet on syytä erottaa tavallisista kirjaimista.
+%Lyhenteet voivat olla jopa kirjaimen mittaisia, kuten joukko-opin leikkaus \verb$\i$ ja yhdiste \verb$\u$.
+%Uuden erikoissymbolin tai lyhenteen voi ottaa koska vain käyttöön avaamalla sen merkityksen lukijalle kirjan, luvun, tehtävänannon taikka tehtävän alussa.
+%Voidaan esimerkiksi sanoa, että merkitään jotain $+$-operaattoria muistuttavaa uutta operaattoria symbolilla \verb$\+$.
+
+%Kaikkia erikoissymboleja merkitään \verb$\$-alkuliitteellä aivan kuten LaTeXissa.
+%Tällaisia ovat kreikkalaisten aakkosten lisäksi nimetyt funktiot (neliöjuuri), integraalit, summafunktiot ja erikoisemmat operaattorit.
+%Tämä tuo vapautta merkintöjen selkiyttämiseen menettämättä kuitenkaan tuloksen täsmällisyyttä.
+%Merkintöjen lyhyt avaaminen auttaa myös näihin merkintöihin tottumatonta ymmärtämään mistä on kyse.
+
+% Yksiköt?
+% 3ms
+% 5m/s
+% 80km/h
+% 9.81m/s^2
+
+\section{Kreikkalaiset aakkoset}
+Kreikkalaiset aakkoset voi ilmaista sanallisesti esimerkiksi \verb$alpha$ ja \verb$beta$.
+Näitä käytetään todella tiuhaan, joten niiden lyhentämiseen on varattu oma etuliite $~$-merkki.
+Taulukossa~\ref{tbl:greek} on jokaisen kreikkalaisen aakkosen lyhenne ja LaTeX:in kanssa yhtenevä pidempi sanallinen muoto.
+
+\begin{table}[h!]
+\begin{tabular}{ l | l | l }
+% alpha beta gamma delta epsilon zeta eta theta iota kappa lambda mu nu xi omicron pi rho sigma tau ypsilon phi chi psi omega
+% a b c d e z g h i k l m n q o p r s t u f x y w
+% unused letters: j v
+Sanallinen & Lyhenne & Aakkonen \\ \hline
+alpha & $\alpha$ & \verb$~a$ \\
+beta & $\beta$ & \verb$~b$ \\
+gamma & $\gamma$ & \verb$~c$ \\
+delta & $\delta$ & \verb$~d$ \\
+epsilon & $\epsilon$ & \verb$~e$ \\
+zeta & $\zeta$ & \verb$~z$ \\
+eta & $\eta$ & \verb$~g$ \\
+theta & $\theta$ & \verb$~h$ \\
+iota & $\iota$ & \verb$~i$ \\
+kappa & $\kappa$ & \verb$~k$ \\
+lambda & $\lambda$ & \verb$~l$ \\
+mu & $\mu$ & \verb$~m$ \\
+nu & $\nu$ & \verb$~n$ \\
+xi & $\xi$ & \verb$~q$ \\
+omicron & $o$ & \verb$~o$ \\
+pi & $\pi$ & \verb$~p$ \\
+rho & $\rho$ & \verb$~r$ \\
+sigma & $\sigma$ & \verb$~s$ \\
+tau & $\tau$ & \verb$~t$ \\
+upsilon & $\upsilon$ & \verb$~u$ \\
+phi & $\phi$ & \verb$~f$ \\
+chi & $\chi$ & \verb$~x$ \\
+psi & $\psi$ & \verb$~y$ \\
+omega & $\omega$ & \verb$~w$ \\
+\end{tabular}
+\caption{Kreikkalaiset aakkoset}
+\label{tbl:greek}
+\end{table}
+
+\section{Kaavat ja aritmetiikkaa}
+Numeroista, symboleista ja operaatioista muodostetaan kaavoja.
+Kaavan eri osia erotellaan toisistaan välein tarvittaessa tai selkeyden lisäämiseksi.
+Välilyöntejä käytetään pistemerkeistä eroavasti.
+Välilyöntien tarkoituksena on selkiyttää ja ryhmitellä kaavoja.
+Turhia välilyöntejä on syytä välttää, sillä se tekee kokonaisuuksista pidempiä.
+Tarkkoja sääntöjä tästä ei anneta, sillä selkeyden määrittely eri tilanteissa olisi hankalaa.
+
+On kuitenkin syytä huomioida seuraavat asiat:
+\begin{itemize}
+	\item ei välejä sulkujen sisäpuolelle
+	\item väli operaattorin molemmille puolille tai sitten ei kummallekaan
+	\item ei välejä jokaisen merkin ympärille, koska muuten sen merkitys katoaa
+\end{itemize}
+
+Taulukko~\ref{tbl:arithmop} luettelee yleisimpiä aritmeettisia operaattoreita.
+Operaatioilla on niille sovitut laskujärjestyssäännöt.
+Laskujärjestyksen muuttaminen ja lausekkeen ryhmittely tapahtuu kaarisulkeiden \verb$($ ja \verb$)$ avulla.
+
+On syytä huomata, että sulkeita tarvitaan joskus tavallisia matematiikan merkintöjä enemmän.
+Näin käy mm. potenssin ja jakolaskun kohdalla, jolloin ryhmitely tulee selväksi asettelusta. 
+Seuraavat esimerkit selventävät eroja:
+\begin{itemize}
+	\item useampi terminen nimittäjä on aina sulkeissa: $\frac{1}{x y}$ merkitään \verb$1/(x*y)$.
+	\item Pelkkää tuloa sisältävä osoittaja ei tarvitse sulkeita: $\frac{x y}{z}$ voidaan kirjoittaa \verb$x*y/z$.
+	\item Summan tai erotuksen sisältämät osoittajat ja nimittäjät pitää aina laittaa sulkeisiin: $\frac{x+y}{z}$ on välttämättö merkittävä muotoon 
+	\verb$(x+y)/z$.
+\end{itemize}
+
+\begin{table}[H]
+\begin{tabular}{ l|l|l }
+\multicolumn{2}{c}{Operaatio} & Merkintä \\ \hline
+Summa & $x+y$ & \verb$x+y$ \\
+Erotus & $x-y$ & \verb$x-y$ \\
+Tulo & $x y$ & \verb$x*y$, \verb$xy$ \\
+Jako & $\frac{x}{y}$ & \verb$x/y$ \\
+Potenssi & $x^y$ & \verb$x^y$ \\
+Itseisarvo & $|x|$ & \verb$|x|$ \\
+Yhtäsuuruus & $x=y$ & \verb$x=y$ \\
+Erisuuruus & $x\neq y$ & \verb$x!=y$ \\
+Likimäärin, noin & $x\approx y$ & \verb$x~=y$ \\
+Pienempi kuin & $x < y$ & \verb$x<y$ \\
+Pienempi tai yhtäsuuri & $x \leq y$ & \verb$x<=y$ \\
+Suurempi kuin & $x > y$ & \verb$x>y$ \\
+Suurempi tai yhtäsuuri & $x \geq y$ & \verb$x>=y$ \\
+paljon pienempi kuin & $x << y$ & \verb$x << y$ \\
+paljon suurempi kuin & $x >> y$ & \verb$x >> y$ \\
+\end{tabular}
+\caption{Yleisimpiä aritmeettisia operaattoreita}
+\label{tbl:arithmop}
+\end{table}
+
+Taulukko~\ref{tbl:arithmfunc} esittelee yleisimpiä aritmeettisia funktioita, joihin voi viitata tunnetulla nimellä
+tai vahtoehtoisesti suoraan käyttäen operaation alkuperäistä muotoa.
+Esimerkiksi juuria voi täysin luontevasti ilmaista potensseina. 
+Neliöjuuri (sqrt; square root) on \verb$x^(1/2)$, kuutiojuuri (cbrt; cube root) \verb$x^(1/3)$ ja $n$:nnes juuri (nrt; nth root) vastaavasti \verb$x^(1/n)$.
+
+\begin{table}[h!]
+\begin{tabular}{ l|l|l }
+\multicolumn{2}{c}{Operaatio} & Merkintä \\ \hline
+neliöjuuri & $\sqrt{x}$ & \verb$sqrt(x)$, \verb$\rt2(x)$ \\
+kuutiojuuri & $\sqrt[3]{x}$ & \verb$cbrt(x)$, \verb$\rt3(x)$ \\
+n:s juuri & $\sqrt[n]{x}$ & \verb$nrt(x)$, \verb$(x)^(1/n)$ \\
+eksponenttifunktio & $e^x$ & \verb$e^x$ \\
+logaritmi & $\log x$ & \verb$log x$ \\
+a-kantainen logaritmi & $\log_a x$ & \verb$log_a x$ \\
+\end{tabular}
+\caption{Aritmeettisia funktioita}
+\label{tbl:arithmfunc}
+\end{table}
+
+\begin{table}[ht]
+\begin{tabular}{ l|l|l }
+\multicolumn{2}{c}{Operaatio} & Merkintä \\ \hline
+x on y:n tekijä & $x\mid y$ & \verb$x | y$ \\
+x ei ole y:n tekijä & $x\nmid y$ & \verb$x !| y$ \\
+
+ääretön & $\infty$ & infty, \verb$\8$ \\
+plus ääretön & $+\infty$ & +infty, \verb$+\8$ \\
+miinus ääretön & $-\infty$ & -infty, \verb$-\8$ \\
+
+prosentti & $\percent$ & \verb$%$ \\
+promille & $\permil$ & \verb$:%$ \\
+kertoma & $n!$ & \verb$n!$ \\
+\end{tabular}
+\caption{mihin nämä kuuluvat}
+\label{tbl:hmm}
+\end{table}
+
+\FloatBarrier
+
+\section{Logiikka}
+Taulukko~\ref{tbl:logicop} listaa loogisia operaattoreita.
+
+\begin{table}[ht]
+\begin{tabular}{ l|l|l }
+\multicolumn{2}{c}{Operaatio} & Merkintä \\ \hline
+ja & $a \wedge b$ & \verb$a & b$ \\
+tai & $a \vee b$ & \verb$a | b$ \\
+negaatio & $\neg a$ & \verb$!a$ \\
+implikaatio & $a \Rightarrow b$ & \verb$a --> b$, \verb$b <-- a$ \\
+ekvivalenssi & $a \Leftrightarrow b$ & \verb$a <--> b$ \\
+\end{tabular}
+\caption{Loogisia operaatioita.}
+\label{tbl:logicop}
+\end{table}
+
+\section{Geometria}
+\begin{table}[ht]
+\begin{tabular}{ l|l|l }
+\multicolumn{2}{c}{Kuvaus} & Merkintä \\ \hline
+yhdensuuntaiset & $l \parallel m$ & \verb$l || m$ \\
+ei yhdensuuntaiset & $l \nparallel m$ & \verb$l |\| m$ \\
+kohtisuorat & $l \perp m$ & \verb$l -|- m$ \\
+kuviot yhdenmuotoiset & $a\sim b$ & $a ~ b$ \\
+kuviot yhtenevät & $a\cong b$ & $a ~= b$ \\
+kulma & $\sphericalangle ABC$ & \verb$kulma ABC$ \\
+\end{tabular}
+\caption{Geometrian symboleja}
+\label{tbl:geometry}
+\end{table}
+
+\begin{table}[ht]
+\begin{tabular}{ ll|l }
+\multicolumn{2}{c}{Kuvaus} & Merkintä \\ \hline
+suuntajana, vektori & $\overrightarrow{AB}$ & \verb$<AB>$ \\
+vektori & $\vec{a}$ & \verb$<a>$ \\
+vektorin pituus, normi & $\| x\|$ & \verb$||x||$ \\
+pistetulo & $\vec{a} \cdot \vec{b}$ & \verb$a . b$ \\
+ristitulo & $\vec{a} \times \vec{b}$ & \verb$a \x b$ \\
+sisätulo & $\langle x,y\rangle$ & \verb$<x,y>$ \\
+saman suuntaiset & $\vec{a} \uparrow\uparrow \vec{b}$ & \verb$a >|> b$ \\
+vastakkaissuuntaiset & $\vec{a} \uparrow\downarrow \vec{b}$ & \verb$a >|< b$ \\
+$x$:n suuntainen yksikkövektori & $\vec{a}^{\circ}$ & \verb$x/||x||$ \\
+\end{tabular}
+\caption{Vektorimerkintöjä}
+\label{tbl:vectors}
+\end{table}
+
+\section{Joukko-oppi}
+% verrannollinen, noudattaa jakaumaa
+% todo: täydennä joukkojen määrittelyt taulukossa
+Joukkoa kuvataan alltosulkein, joiden välissä ilmaistaan joukon sisältämät alkiot.
+Alkiot voi määritellä luettelemalla sen alkiot pilkuilla eroteltuina.
+Vaihtoehtoinen tapa on parametrisoitu määritelmä, jossa aaltosulkeissa ensin kerrotaan alkiot määräävä muuttuja ja pystyviivan jälkeen rajaava ehto.
+Takulukossa~\ref{tbl:setop} luetellaan joukon eri määrittelytapoja sekä joukkojen välisiä operaatioita.
+Taulukko~\ref{tbl:numeric} listaa yleisille numeerosille joukoille annettuja symboleja.
+
+Jotkin operaatioista, kuten leikkaus ja yhdiste, voidaan kohdistaa kahden joukon sijasta myös useaan joukkoon.
+Esimerkiksi jokaisen kokonaisluvun muodostamien yksiöiden yhdiste on koko kokonaislukujen joukko: \verb$\u{x\in \Z} {x} = \Z$.
+Tällaisia indeksijoukollisia operaatioita tarkastellaan lähemmin luvussa~\ref{sec:indexsets}.
+
+\begin{table}[ht]
+\begin{tabular}{ l|l|l }
+\multicolumn{2}{c}{Numeerinen joukko} & Symboli \\ \hline
+Luonnolliset luvut & $\mathbb{N}$ & \verb$\N$ \\
+Kokonaisluvut & $\mathbb{Z}$ & \verb$\Z$ \\
+Realiluvut & $\mathbb{R}$ & \verb$\R$ \\
+Rationaaliluvut & $\mathbb{Q}$ & \verb$\Q$ \\
+Irrationaaliluvut & $\mathbb{R} \setminus \mathbb{Q}$ & \verb$\R \m \Q$ \\
+Kompleksiluvut & $\mathbb{C}$ & \verb$\C$ \\
+Algebralliset luvut & $\mathbb{A}$ & \verb$\A$ \\
+\end{tabular}
+\caption{Numeerisia joukkoja}
+\label{tbl:numeric}
+\end{table}
+
+\begin{table}[ht]
+\begin{tabular}{ l|l|l }
+\multicolumn{2}{c}{Seloste} & Symboli \\ \hline
+tyhjä joukko & \verb${}$, \verb$\0$ & $\emptyset$ \\
+joukko, yksiö & \verb${x}$ & $\{x\}$ \\
+kaksio & \verb${x,y}$ & $\{x,y\}$ \\
+joukko & \verb${x_1,x_2,...}$ & $\{x_1,x_2,\ldots\}$ \\
+& \verb${2x | x \in \N}$ & $\{2x \mid x \in \mathbb{N}\}$ \\
+Kuuluu joukkoon & \verb$x \in A$ & $x\in A$ \\
+ei kuuluu joukkoon & \verb$x !\in A$ & $x\notin A$ \\
+osajoukko & \verb$A \sub B$ & $A \subset B$ \\
+& \verb$A \sub= B$ & $A \subseteq B$ \\
+& \verb$B \sup A$ & $B \supset A$ \\
+aito osajoukko & \verb$A \sub!= B$ & $A \subsetneq B$ \\
+ei osajoukko & \verb$A !\sub B$ & \\
+komplementti & \verb$A^c$ & $A^c$ \\
+avoin osajoukko & \verb$A \subo B$ & todo \\
+suljettu osajoukko & \verb$A subc B$ & todo \\
+suljettu väli & $[a,b]$ & \verb$[a,b]$ \\
+avoin väli & $]a,b[$ & \verb$]a,b[$ \\
+puoliavoin väli & $[a,b[$ & \verb$[a,b[$ \\
+& $]a,b]$ & \verb$]a,b]$ \\
+pienin yläraja & $\sup A$ & \verb$sup A$ \\
+suurin alaraja & $\inf A$ & \verb$inf A$ \\
+pienin luku & $\min A$ & \verb$min A$ \\
+suurin luku & $\max A$ & \verb$max A$ \\
+alkioiden lukumäärä & $n(A)$ & \verb$n(A)$ \\
+Ristitulo & \verb$A \x B$ & $A\times B$ \\
+yhdiste & \verb$A \u B$ & $A\cup B$ \\
+leikkaus & \verb$A \i B$ & $A\cap B$ \\
+\end{tabular}
+\caption{Binäärisiä joukko-opin operaatioita}
+\label{tbl:setop}
+\end{table}
+
+\begin{table}[ht]
+\begin{tabular}{ ll|l|l }
+\multicolumn{2}{c}{Kvanttori} & Sanallisesti & Lyhenne \\ \hline
+olemassaolo & $\exists x$ & exists & \verb$\e x$ \\
+yksikäsitteisyys & $\exists! x$ & exists! & \verb$\e! x$ \\
+todo & $\nexists x$ & !exists & \verb$!\e x$ \\
+universaali, kaikilla & $\forall x$ & forall & \verb$\a x$ \\
+\end{tabular}
+\caption{Kvanttoreita}
+\label{tbl:setq}
+\end{table}
+
+% todo: selitä kvanttoreita tekstissä myös
+% {2*x | x in \N}
+% {x | P(x)}
+% {x \in A | P(x)}
+% \U{i in \N} A_i Joukkojen A_1, A_2, ..., A_n unioni
+% \I{i in \N} A_i Joukkojen A_1, A_2, ..., A_n leikkaus
+\FloatBarrier
+
+\section{Kuvaukset ja funktiot}
+\begin{table}[ht]
+\begin{tabular}{ ll|l }
+\multicolumn{2}{c}{Kuvaus tai funktio} & Merkintä \\ \hline
+kuvaus & $f: A \rightarrow B$ & \verb$f: A -> B$ \\
+kuvautuu & $f \mapsto f(x)$ & \verb$x |-> f(x)$ \\
+käänteiskuvaus & $f^{-1}$ & \verb$f^(-1)$ \\
+Funktioiden yhdiste & $f\circ g$ & \verb$f@g$ \\
+Funktion $f$ kuva & $fA$ & \verb$fA$ \\
+Alkion kuva & $f{x}$ & \verb$f{x}$ \\
+\end{tabular}
+\caption{Kuvauksia ja funktioita}
+\label{tbl:func}
+\end{table}
+
+\section{Todennäkösyyslaskenta}
+Taulukko~\ref{tbl:prob} esittelee yleisimpiä todennäköisyyslaksennassa käytettäviä merkintöjä.
+
+\begin{table}[ht]
+\begin{tabular}{ ll|l }
+\multicolumn{2}{l}{Symboli} & Merkintä \\ \hline
+satunnaismuuttuja & $X$, $\underline{x}$ & $X$ \\
+A:n todennäköisyys & $P(A)$ & $P(A)$ \\
+todennäköisyys ehdollinen B:llä & $P(A \mid B)$ & $P(A | B)$ \\
+komplementtitapahtuma & $\bar{A}$ & \verb$A^c$ \\
+x:n keskiarvo & $\bar{x}$ & \verb$mean(x)$ \\
+X:n odotusarvo & $EX$, $E(X)$, $\mu_X$ & \verb$EX$, \verb$E(X)$, \verb$~m_X$ \\
+X:n keskihajonta & $DX$, $D(X)$, $\sigma_X$ & \verb$DX$, \verb$D(X)$, $~s_X$ \\
+X:n varianssi & $D^2(X)$, $\sigma^2$ & \verb$D^2(X)$, \verb$\sigma^2$ \\
+normaalijakauma & $N(\mu,\sigma)$ & \verb$N(~m,~s)$ \\
+verrannollinen & $x\propto y$ & \verb$x ~~ y$ \\
+noudattaa jakaumaa & $X\sim Y$ & \verb$X ~ Y$ \\
+\end{tabular}
+\caption{Todennäköisyyslaskennasta ja jakaumista}
+\label{tbl:prob}
+\end{table}
+
+\FloatBarrier
+
+\section{Vektorit ja matriisit}
+Vektoreilla ja matriiseilla kuvataan useampiulotteisia muuttujia. 
+Oikeastaan vektorit ovat yksirivisiä tai -sarakkeisia matriiseja.
+Merkinnöissä näitä on siitä syystä hyvä kuvata samoin keinoin.
+
+Merkinnöissä moniulotteiset muuttujat erotellaan joskus yksiulotteisista joko lisäämällä muuttujan 
+päälle nuoli tai käyttämällä paksunnettua fonttia. 
+Syy erotteluun on enimmäkseen pedagoginen. Tärkeintä on, että käytetyt muuttujat on esitelty ennen niiden käyttöä. Lisäksi olisi huonon käytännön mukaista 
+esimerkiksi nimetä jokin yksiulotteinen ja moniulotteinen muuttuja samalla merkillä niin, että erottavana tekijänä on vain päälle piirretty viiva.
+
+Täsmällisin tapa esitellä tällainen muuttuja on kertoa millaiseen joukkoon se kuuluu. Esimerkiksi tavallinen yksiulotteinen realiluku ilmoitetaan kuuluvaksi 
+realilukujoukkoon: \verb$x in \R$ ($x\in \mathbb{R}$). Vastaavasti $n$-ulotteiset realivektorit kuuluvat joukkoon \verb$\R^n$ ($\mathbb{R}^n$).  
+Matriisien joukko puolestaan ilmaistaan dimensioiden ristitulona. 
+Esimerkiksi $m$-rivinen ja $n$-sarakkeinen matriisi kuuluu joukkoon \verb$\R^(m \x n)$ ($\mathbb{R}^{m \times n}$).
+Vaaka- ja pystysuuntaiset vektorit on mahdollista erotella sanallisesti.
+Ne voi myös ilmaista matriiseina. 
+Esimerkiksi kolmiulotteinen vaakavektori kuuluu joukkoon \verb$\R^(1 \x 3)$ ($\mathbb{R}^{1\times 3}$), ja kaksiulotteinen pystyvektori \verb$\R^(2 \x 1)$ 
+($\mathbb{R}^{2\times 1}$).
+
+Vektorit ja matriisit voidaan myös kirjoittaa auki niin, että alkiot ovat näkyvillä. Tähän tarkoitukseen käytetään hakasulkuja. Alkiot erotellaan toisistaan 
+välilyönnein tai pilkuin. Rivin päättyminen ilmaistaan puolipistein. Joksus on myös kuuvavampaa tai helpompaa jakaa matriisi usealle riville, jolloin allekkaiset 
+alkiot saadaan näkyviin allekkain.
+
+\section{Derivointi}
+Derivaattaa merkitään isolla D-kirjaimella derivaatan edessä. 
+Jos halutaan määritellä, minkä muuttujan suhteen derivaatta on, lisätään tämä muuttuja heti D:n jälkeen.
+Esimerkiksi x:n suhteen derivoitu \verb$x+y$ merkitään \verb$Dx x+y$.
+Oletuksena on, että derivaattaan lasketaan kuuluvaksi kaikki D:n jälkeen tuleva. Jos derivaatta esiintyy kaavassa, sen voi erotella muista sulkein.
+
+\section{Indeksijoukolliset operaattorit} \label{sec:indexsets}
+Osassa operaatiosta tarkasteltavaksi otetaan jokin joukko muuttujan arvoja.
+Mustavalkomerkinnöissä indeksijoukko tai väli ilmaistaan usein ylä- ja alaindeksien avulla.
+Tämä olisi kelvolinen merkintätapa jo sellaisenaan, mutta tekisi usein merkinnöistä turhan monimutkaisia kirjoittaa ja lukea.
+Siksi tässä luvussa esitetään vaihtoehtoisia tapoja.
+
+\begin{itemize}
+	\item Summa $\sum_{n=1}^\infty 2^(-n) = 1$: \verb$~S{n=1->\infty} 2^(-n) = 1$
+	\item Tulo $n$:nnestä ensimmäisestä kokonaisluvusta eli $n$:n kertoma $\Pi_{i=1}^n i = n!$: \verb$\Pi{i=1->n} i = 1*2*...*n = n!$
+	\item Integraali funktiosta $f$ väliltä $[a,b]$ $\int_a^b f(x) dx$: \verb$int{a,b} f(x) dx$
+	\item Integraali funktiosta $f$ joukon $V$ yli $\int_V f dx$: \verb$int_V f dx$
+	\item Yhdiste kaikista luonnollisen luvun sisältävistä yksiöistä on luonnollisten lukujen joukko $\bigcup_{i=1}^\infty \{i\} = \mathbb{N}$: 
+	\verb$\U{i=1->\8} {i} = \N$
+	\item Kaikkien välien $[0,x]$ leikkaus kaikilla positiivisilla realiluvuilla $x$ on $\bigcap_{x\in \mathbb{R}_+} [0,x] = \emptyset$:
+	\verb$\I{x in \R_+} [0,x] = {}$
+\end{itemize}
+
+\section{Raja-arvot}
+Raja-arvojen merkintä on hyvin samanlainen mustavalkomerkinnän ja latex-syntaksin kanssa.
+Esimerkiksi lauseen $\frac{1}{x}$ raja-arvo, kun $x$ lähestyy ääretöntä eli $\lim(x \rightarrow \infty) \frac{1}{x} = 0$
+merkitään \verb$lim(x->\infty) 1/x = 0$.
+Toispuoleisissa raja-arvoissa kohdearvon jälkeen merkitään lähestymissuunta etumerkillä,
+jolloin funktion $f$ oikean puoleinen (+-etumerkki) raja-arvo pisteessä \verb$x_0$ ($x_0$) on \verb$lim(x->x_0+) f(x)$.
+
+\section{Kombinaatiot, binomikerroin}
+Kombinatorisessa matematiikassa kombinaatio on joukon osajoukko ja $k$-kombinaatio puolestaan tasan $k$ alkiota sisältävä osajoukko.
+Binomikerroin ${n \choose k}=\frac{n!}{k!(n-k)!}$ (lausutaan: "n yli k:n") ilmaisee $k$-kombinaatioiden määrän $n$-alkioisessa joukossa.
+Tätä merkitään sulkeilla ja välilyönnillä: \verb$(n k)=n!/(k!(n-k)!)$.
+Jos merkintä on monimutkaisempi, tilannetta voi selkiyttää lisäsulkein kuten yleensäkin (esimerkiksi: \verb$(n (k-1))$).
