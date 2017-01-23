@@ -80,3 +80,12 @@ The documentation is still missing:
 * Physics
 * Chemistry
 * What else? please point out!
+
+Contact
+-------
+
+Please fill an issue, edit your own suggestions and file a pull request, or just send email:
+
+* Finnish Braille Authorities: braille@celia.fi
+* The project's current maintainer: teemu.kuusisto@gmail.com
+
