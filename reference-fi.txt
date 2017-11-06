@@ -1,0 +1,284 @@
+MathMD -- Matemaattinen merkkikieli
+===================================
+
+Yleistä
+-------
+
+Realiluvut:
+* Luvut merkitään yhteen kirjoitetuin numeroin.
+* Pidemmät luvut voi ryhmitellä listeillä kolmen numeron sarjoihin.
+* Desimaaliosa erotetaan tavalliseen tapaan pilkulla.
+* Etumerkit:
+  * Negatiivinen luku merkitään viivalla (esimerkiksi -1).
+  * Vastaavasti positiivisen luvun positiivisuutta voi korostaa lisäämällä plus-merkin (esim +1).
+  * Etumerkit ja luvut kirjoitetaan yhteen.
+* Murtoluvut merkitään jakolaskuina, koska näillä ei ole mitään eroa.
+* Vastaavasti sekaluvun voi ilmaista plussalla. Esimerkiksi kolme kokonaista ja yksi neljäsosa on 3+1/4.
+* Jos haluaa korostaa, että kyseessä on murto- tai sekaluku, sen voi kirjoittaa yhteen ja ympäröidä välein.
+* Prosentit eli sadasosat merkitään prosenttimerkillä % ja promillea eli tuhannesosia merkinnällä :%.
+
+Muuttujat ja symbolit:
+* Yksinkertaiset muuttujat ilmaistaan tavallisin kirjaimin.
+* Erikoissumbolit voidaan ilmaista aina sanallisesti.
+  * Sanallisissa muodoissa suositaan englannin kieltä.
+* Sanallisia muotoja voi lyhentää käyttämällä
+  * yleisesti tunnettuja lyhenteitä tai
+  * tapauskohtaisesti määriteltyjä lyhenteitä
+* Lyhyet lyhenteet merkitään \-etuliitteellä selkeyden vuoksi.
+* Ylä- ja alaindeksejä voi olla millä tahansa symbolilla.
+  * Alaindeksi merkitään alaviivalla ja yläindeksi potenssimerkillä.
+  * Jos symbolilla on sekä ala- että yläindeksi, suositaan järjestystä, jossa alaindeksi kirjoitetaan ensin.
+  * Yhtä merkkiä pidemmät ala- ja yläindeksit ilmaistaan aaltosulkeiden sisällä.
+* Joskus saman merkityksisiä muuttujia erotetaan toisistaan koristelemalla ne erilaisilla lisämerkeillä kuten hattu-merkillä.
+  * Yleensä itse koristelutapa ei ole merkityksellinen, joten merkin voi korvata jollain muulla.
+  * Koristelussa pyritään suosimaan merkkejä, joita käytetään muutoin vähän (esimerkiksi x', x` tai x", mutta ei x^ tai x~)
+
+Kreikkalaiset aakkoset
+----------------------
+
+aakkonen | symboli
+------------------
+alpha    | ~a
+beta     | ~b
+gamma    | ~c
+delta    | ~d
+epsilon  | ~e
+zeta     | ~z
+eta      | ~g
+theta    | ~h
+iota     | ~i
+kappa    | ~k
+lambda   | ~l
+mu       | ~m
+nu       | ~n
+xi       | ~q
+omicron  | ~o
+pi       | ~p
+rho      | ~r
+sigma    | ~s
+tau      | ~t
+upsilon  | ~u
+phi      | ~f
+chi      | ~x
+psi      | ~y
+omega    | ~w
+
+Aritmeettisia operaatioita
+--------------------------
+
+* Summa: x+y
+* Erotus: x-y
+* Tulo: x y, x*y
+* Osamäärä: x/y
+* Potenssi: x^y
+* Itseisarvo: |x|
+* Yhtäsuuruus: x = y
+* Erisuuruus: x != y
+* Likimäärin, noin: x ~= y
+* Pienempi kuin: x < y
+* Pienempi tai yhtäsuuri kuin: x <= y
+* Suurempi kuin: x > y
+* Suurempi tai yhtäsuuri kuin: x >= y
+* Paljon pienempi kuin: x << y
+* Paljon suurempi kuin: x >> y
+
+Aritmeettisia funktioita
+------------------------
+
+* neliöjuuri: sqrt(x), \2rt(x), rt2(x)
+* kuutiojuuri: cbrt(x), \3rt(x), rt3(x)
+* n:s juuri: \nrt(x), (x)^(1/n)
+* eksponenttifunktio: e^x
+* logaritmi: log x
+* a-kantainen logaritmi: log_a x
+
+Sekalaisia
+----------
+
+* x on y:n tekijä: x | y
+* x ei ole y:n tekijä: x !| y
+
+* ääretön: infty, \8
+* plus ääretön: +infty, +\8
+* miinus ääretön: -infty, -\8
+
+
+Loogisia operaatioita
+---------------------
+
+Operaatio     | Merkintä
+------------------------
+ja            | a & b
+tai           | a | b
+negaatio      | !a
+implikaatio   | a --> b, b <-- a
+ekvivalenssi  | a <--> b
+
+Geometria
+---------
+
+Geometrian symboleja:
+* Yhdensuuntaiset: l parallel m, l || m 
+* Ei yhdensuuntaiset: l nparallel m, l |\| m 
+* Kohtisuorat: l \perp m, l -|- m 
+* Kuviot yhdenmuotoiset: a sim b, a ~ b 
+* Kuviot yhtenevät: a cong b, a ~= b 
+* Kulma: angle ABC, kulma ABC 
+
+Vektorimerkintöjä:
+* Suuntajana, vektori: <AB> 
+* Vektori: <a>
+* Vektorin pituus, normi: ||a||, ||<a>||
+* Pistetulo: a . b
+* Ristitulo: a times b, a \x b
+* Sisätulo: <x,y>
+* Saman suuntaiset: a >|> b
+* Vastakkaissuuntaiset: a >|< b
+* x:n suuntainen yksikkövektori: x^@, x/||x||
+
+Joukko-oppi
+-----------
+
+Joukon määrittely:
+* Tyhjä joukko: {}, \0
+* Yksiö<: {x_1}
+* Kaksio: {x_1,x_2}
+* Joukko luetteloimalla: {x_1,x_2,...,x_n}
+* Parametrisoitu joukko: {x | x in \N}
+  * Esim. parillisten kokonaislukujen joukko: {2x | x in \Z}
+* Suljettu väli: [a,b]
+* Avoin väli: ]a,b[
+* Puoliavoin väli:
+  * oikealta voin väli: [a,b[
+  * vasemmalta voin väli: ]a,b]
+
+Numeerinen joukko    | Symboli
+------------------------------
+Luonnolliset luvut   | \N 
+Kokonaisluvut        | \Z 
+Realiluvut           | \R 
+Rationaaliluvut      | \Q 
+Irrationaaliluvut    | \R \m \Q 
+Kompleksiluvut       | \C
+Algebralliset luvut  | \A 
+
+Operaatioita:
+* Kuuluu joukkoon: x \in A
+* Ei kuuluu joukkoon: x !\in A
+* Osajoukko: A \sub B, A \sub= B, B \sup A, B \sup= A
+* Aito osajoukko: A \sub!= B
+* Ei osajoukko: A !\sub B
+* Komplementti: A^c
+* Avoin osajoukko: A \subo B
+* Suljettu osajoukko: A subc B
+* Pienin yläraja: \sup A
+* suurin alaraja: \inf A
+* pienin luku: \min A
+* suurin luku: \max A
+* alkioiden lukumäärä: n(A)
+* Ristitulo: A \x B
+* yhdiste: A \u B
+* leikkaus: A \i B
+
+Kvanttoreita:
+* olemassaolo: exists x, \e x 
+* yksikäsitteisyys: exists! x, \e! x 
+* todo !exists, !\e x 
+* universaali, kaikilla: forall x, \a x 
+
+Kuvaukset ja funktiot
+---------------------
+
+* Kuvaus: f: A -> B 
+* Kuvautuu: x |-> f(x) 
+* Käänteiskuvaus: f^(-1) 
+* Funktioiden yhdiste: f@g 
+* Funktion f kuva: fA 
+* Alkion x kuva: f{x} 
+
+Todennäkösyyslaskenta
+---------------------
+
+Todennäköisyyslaskennasta ja jakaumista:
+* satunnaismuuttuja: X 
+* A:n todennäköisyys: P(A) 
+* todennäköisyys ehdollinen B:llä: P(A | B) 
+* komplementtitapahtuma: A^c 
+* x:n keskiarvo: mean(x)
+* X:n odotusarvo: EX, E(X), ~m_X 
+* X:n keskihajonta: DX, D(X), ~s_X 
+* X:n varianssi: D^2(X), \sigma^2_X
+* normaalijakauma: N(~m,~s) 
+* verrannollinen: x ~~ y 
+* noudattaa jakaumaa: X ~ Y 
+
+Vektorit ja matriisit
+---------------------
+
+Vektoreilla ja matriiseilla kuvataan useampiulotteisia muuttujia. 
+Oikeastaan vektorit ovat yksirivisiä tai -sarakkeisia matriiseja.
+Merkinnöissä näitä on siitä syystä hyvä kuvata samoin keinoin.
+
+Merkinnöissä moniulotteiset muuttujat erotellaan joskus yksiulotteisista joko lisäämällä muuttujan 
+päälle nuoli tai käyttämällä paksunnettua fonttia. 
+Syy erotteluun on enimmäkseen pedagoginen. Tärkeintä on, että käytetyt muuttujat on esitelty ennen niiden käyttöä. Lisäksi olisi huonon käytännön mukaista 
+esimerkiksi nimetä jokin yksiulotteinen ja moniulotteinen muuttuja samalla merkillä niin, että erottavana tekijänä on vain päälle piirretty viiva.
+
+Täsmällisin tapa esitellä tällainen muuttuja on kertoa millaiseen joukkoon se kuuluu. Esimerkiksi tavallinen yksiulotteinen realiluku ilmoitetaan kuuluvaksi 
+realilukujoukkoon: \verb$x in \R$ ($x\in \mathbb{R}$). Vastaavasti $n$-ulotteiset realivektorit kuuluvat joukkoon \verb$\R^n$ ($\mathbb{R}^n$).  
+Matriisien joukko puolestaan ilmaistaan dimensioiden ristitulona. 
+Esimerkiksi $m$-rivinen ja $n$-sarakkeinen matriisi kuuluu joukkoon \verb$\R^(m \x n)$ ($\mathbb{R}^{m \times n}$).
+Vaaka- ja pystysuuntaiset vektorit on mahdollista erotella sanallisesti.
+Ne voi myös ilmaista matriiseina. 
+Esimerkiksi kolmiulotteinen vaakavektori kuuluu joukkoon \verb$\R^(1 \x 3)$ ($\mathbb{R}^{1\times 3}$), ja kaksiulotteinen pystyvektori \verb$\R^(2 \x 1)$ 
+($\mathbb{R}^{2\times 1}$).
+
+Vektorit ja matriisit voidaan myös kirjoittaa auki niin, että alkiot ovat näkyvillä. Tähän tarkoitukseen käytetään hakasulkuja. Alkiot erotellaan toisistaan 
+välilyönnein tai pilkuin. Rivin päättyminen ilmaistaan puolipistein. Joksus on myös kuuvavampaa tai helpompaa jakaa matriisi usealle riville, jolloin allekkaiset 
+alkiot saadaan näkyviin allekkain.
+
+Derivointi
+----------
+
+Derivaattaa merkitään isolla D-kirjaimella derivaatan edessä. 
+Jos halutaan määritellä, minkä muuttujan suhteen derivaatta on, lisätään tämä muuttuja heti D:n jälkeen.
+Esimerkiksi x:n suhteen derivoitu x+y merkitään Dx x+y.
+Oletuksena on, että derivaattaan lasketaan kuuluvaksi kaikki D:n jälkeen tuleva. Jos derivaatta esiintyy kaavassa, sen voi erotella muista sulkein.
+
+Indeksijoukolliset operaattorit
+-------------------------------
+
+Osassa operaatiosta tarkasteltavaksi otetaan jokin joukko muuttujan arvoja.
+Mustavalkomerkinnöissä indeksijoukko tai väli ilmaistaan usein ylä- ja alaindeksien avulla.
+Tämä on kelvolinen merkintätapa, mutta tekee merkinnöistä usein monimutkaisia useiden sulkujen takia.
+
+
+Esimerkkejä vahtoehtoisista ilmaisutavoista:
+* Summa: ~S{n=1->\8} 2^(-n) = 1
+* Tulo $n$:nnestä ensimmäisestä kokonaisluvusta eli luvun n kertoma: ~P{i=1->n} i = 1*2*...*n = n!
+* Integraali funktiosta f väliltä [a,b]: int{a,b} f(x) dx
+* Integraali funktiosta f joukon V yli: int_V f dx
+* Yhdiste kaikista luonnollisen luvun sisältävistä yksiöistä on luonnollisten lukujen joukko: \u{i=1->\8} {i} = \N
+* Kaikkien välien [0,x] leikkaus kaikilla positiivisilla realiluvuilla x on: \i{x in \R_+} [0,x] = \0
+
+Raja-arvot
+----------
+
+Raja-arvojen merkintä on hyvin samanlainen mustavalkomerkinnän ja latex-syntaksin kanssa.
+
+Jos funktion f raja-arvo pisteessä x_0 on a, niin sanomme, että f(x) -> a, kun x -> x_0
+eli raja-arvo a = lim(x->x_0) f(x).
+
+Toispuoleisissa raja-arvoissa pistettä x_0 lähestytään tietystä suunnasta, jota merkitään etumerkillä.
+Funktion f oikean puoleinen (+-etumerkki) raja-arvo pisteessä x_0 on lim(x->x_0+) f(x).
+
+
+Kombinaatiot, binomikerroin
+---------------------------
+
+Kombinatorisessa matematiikassa kombinaatio on joukon osajoukko ja k-kombinaatio puolestaan tasan k alkiota sisältävä osajoukko.
+Binomikerroin ilmaisee k-kombinaatioiden määrän n-alkioisessa joukossa.
+Binomikerrointa merkitään sulkeilla ja välilyönnillä: (n k).
+Totutusti se lausutaan muodossa: "n yli k:n".
+Binomikertoimen kaava on: (n k) = n!/(k!(n-k)!), mussä merkintä n! kuvaa luvun n kertomaa.
+Jos binomikeroimen n- tai k-muuttujien tilalla halutaan esittää pidempi kaava, tämän voi sulkea sulkujen sisään (esimerkiksi: (n (k-1))).
