@@ -61,6 +61,7 @@ Documentations
 
 The specifications are currently only available in Finnish.
 
+* Quick reference in Finnish (`plain text <reference-fi.txt>`_)
 * Specifications in Finnish (`PDF <docs/mathmd.pdf>`_)
 * Specifications in Finnish (TeX `document <docs/mathmd.tex>`_ and `contents <docs/body.tex>`_)
 
@@ -70,7 +71,7 @@ Todo and future plans
 The proposed future plans:
 
 * Translate to English
-* Conver the documentation to other formats, maybe html or rst
+* Convert the documentation to other formats, maybe html or rst
 * Translate from English to other languages?
 * Automated conversions from/to LaTeX?
 
