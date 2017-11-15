@@ -33,6 +33,16 @@ Muuttujat ja symbolit:
   * Yleensä itse koristelutapa ei ole merkityksellinen, joten merkin voi korvata jollain muulla.
   * Koristelussa pyritään suosimaan merkkejä, joita käytetään muutoin vähän (esimerkiksi x', x` tai x", mutta ei x^ tai x~)
 
+Välien käytöstä:
+* Välien tarkoituksena on selkiyttää ja ryhmitellä kaavoja.
+* Turhia välejä on syytä välttää, sillä ne pidentävät kokonaisuuksia.
+* Tarkkoja sääntöjä ei anneta, sillä selkeyden määrittely eri tilanteissa olisi hankalaa.
+* On kuitenkin syytä huomioida seuraavat ohjeistukset:
+  * ei välejä sulkujen sisäpuolelle
+  * väli operaattorin molemmille puolille tai sitten ei kummallekaan
+  * ei välejä jokaisen merkin ympärille, koska muuten välin merkitys katoaa
+
+
 Kreikkalaiset aakkoset
 ----------------------
 
