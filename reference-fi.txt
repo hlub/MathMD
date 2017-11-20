@@ -225,23 +225,17 @@ Todennäköisyyslaskennasta ja jakaumista:
 Vektorit ja matriisit
 ---------------------
 
-Vektoreilla ja matriiseilla kuvataan useampiulotteisia muuttujia. 
-Oikeastaan vektorit ovat yksirivisiä tai -sarakkeisia matriiseja.
-Merkinnöissä näitä on siitä syystä hyvä kuvata samoin keinoin.
+Moniulotteiset muuttujat erotellaan joskus yksiulotteisista joko lisäämällä muuttujan 
+päälle nuoli tai käyttämällä paksunnettua fonttia. Monessa tapauksessa
+tällainen erottelu on tarpeetonta ja tulee ilmi muutenkin.
 
-Merkinnöissä moniulotteiset muuttujat erotellaan joskus yksiulotteisista joko lisäämällä muuttujan 
-päälle nuoli tai käyttämällä paksunnettua fonttia. 
-Syy erotteluun on enimmäkseen pedagoginen. Tärkeintä on, että käytetyt muuttujat on esitelty ennen niiden käyttöä. Lisäksi olisi huonon käytännön mukaista 
-esimerkiksi nimetä jokin yksiulotteinen ja moniulotteinen muuttuja samalla merkillä niin, että erottavana tekijänä on vain päälle piirretty viiva.
-
-Täsmällisin tapa esitellä tällainen muuttuja on kertoa millaiseen joukkoon se kuuluu. Esimerkiksi tavallinen yksiulotteinen realiluku ilmoitetaan kuuluvaksi 
-realilukujoukkoon: \verb$x in \R$ ($x\in \mathbb{R}$). Vastaavasti $n$-ulotteiset realivektorit kuuluvat joukkoon \verb$\R^n$ ($\mathbb{R}^n$).  
+Täsmällisin tapa esitellä vektori tai matriisi on kertoa millaiseen joukkoon se kuuluu. Esimerkiksi tavallinen yksiulotteinen realiluku ilmoitetaan kuuluvaksi 
+realilukujoukkoon: x in \R. Vastaavasti n-ulotteiset realivektorit kuuluvat joukkoon \R^n. 
 Matriisien joukko puolestaan ilmaistaan dimensioiden ristitulona. 
-Esimerkiksi $m$-rivinen ja $n$-sarakkeinen matriisi kuuluu joukkoon \verb$\R^(m \x n)$ ($\mathbb{R}^{m \times n}$).
+Esimerkiksi m-rivinen ja n-sarakkeinen matriisi kuuluu joukkoon \R^(m \x n).
 Vaaka- ja pystysuuntaiset vektorit on mahdollista erotella sanallisesti.
 Ne voi myös ilmaista matriiseina. 
-Esimerkiksi kolmiulotteinen vaakavektori kuuluu joukkoon \verb$\R^(1 \x 3)$ ($\mathbb{R}^{1\times 3}$), ja kaksiulotteinen pystyvektori \verb$\R^(2 \x 1)$ 
-($\mathbb{R}^{2\times 1}$).
+Esimerkiksi kolmiulotteinen vaakavektori kuuluu joukkoon \R^(1 \x 3), ja kaksiulotteinen pystyvektori \R^(2 \x 1).
 
 Vektorit ja matriisit voidaan myös kirjoittaa auki niin, että alkiot ovat näkyvillä. Tähän tarkoitukseen käytetään hakasulkuja. Alkiot erotellaan toisistaan 
 välilyönnein tai pilkuin. Rivin päättyminen ilmaistaan puolipistein. Joksus on myös kuuvavampaa tai helpompaa jakaa matriisi usealle riville, jolloin allekkaiset 
