@@ -276,6 +276,13 @@ eli raja-arvo a = lim(x->x_0) f(x).
 Toispuoleisissa raja-arvoissa pistettä x_0 lähestytään tietystä suunnasta, jota merkitään etumerkillä.
 Funktion f oikean puoleinen (+-etumerkki) raja-arvo pisteessä x_0 on lim(x->x_0+) f(x).
 
+Integraalit
+-----------
+
+* Määräämätön integraali: funktion f integraali muuttujan x suhteen on int f(x) dx
+* Määrätty integraali: funktion f integraali muuttujan x suhteen väliltä [a,b] on int{a,b} f(x) dx
+* Integraali yli käyrän C: int_C f ds
+* Integraali yli suljetun käyrän C: oint_C f ds
 
 Kombinaatiot, binomikerroin
 ---------------------------
