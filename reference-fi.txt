@@ -243,6 +243,16 @@ Vektorit ja matriisit voidaan myös kirjoittaa auki niin, että alkiot ovat näk
 välilyönnein tai pilkuin. Rivin päättyminen ilmaistaan puolipistein. Joksus on myös kuuvavampaa tai helpompaa jakaa matriisi usealle riville, jolloin allekkaiset 
 alkiot saadaan näkyviin allekkain.
 
+Esimerkkejä:
+* n-ulotteinen vektori: olkoon x in \R^n
+* n-ulotteinen vaakavektori: olkoon x in \R^n vaakavektori
+* m \x n -matriisi: olkoon A in \R^(m \x n)
+* vaakavektori luettelemalla: [x, y, z], [x y z]
+* pystyvektori luetelemalla: [x; y; z]
+* 2x2-neliömatriisi luettelemalla: [a b; c d]
+* transpoosi: x^T
+* käänteismatriisi: A^(-1)
+
 Derivointi
 ----------
 
