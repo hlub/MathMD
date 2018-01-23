@@ -11,6 +11,7 @@ Realiluvut:
 * Etumerkit:
   * Negatiivinen luku merkitään viivalla (esimerkiksi -1).
   * Vastaavasti positiivisen luvun positiivisuutta voi korostaa lisäämällä plus-merkin (esim +1).
+  * Plus-miinus -etumerkki merkitään loogisesti yhdistämällä etumerkit (esimerkiksi +-1)
   * Etumerkit ja luvut kirjoitetaan yhteen.
 * Murtoluvut merkitään jakolaskuina, koska näillä ei ole mitään eroa.
 * Vastaavasti sekaluvun voi ilmaista plussalla. Esimerkiksi kolme kokonaista ja yksi neljäsosa on 3+1/4.
@@ -189,6 +190,7 @@ Operaatioita:
 * Ristitulo: A \x B
 * yhdiste: A \u B
 * leikkaus: A \i B
+* mahtavuus, joukon koko: |A|
 
 Kvanttoreita:
 * olemassaolo: exists x, \e x 
@@ -219,7 +221,7 @@ Todennäköisyyslaskennasta ja jakaumista:
 * X:n keskihajonta: DX, D(X), ~s_X 
 * X:n varianssi: D^2(X), \sigma^2_X
 * normaalijakauma: N(~m,~s) 
-* verrannollinen: x ~~ y 
+* verrannollinen: x ~~ y, x propto y
 * noudattaa jakaumaa: X ~ Y 
 
 Vektorit ja matriisit
