@@ -143,26 +143,28 @@ Joukko-oppi
 
 Joukon määrittely:
 * Tyhjä joukko: {}, \0
-* Yksiö<: {x_1}
+* Yksiö: {x_1}
 * Kaksio: {x_1,x_2}
 * Joukko luetteloimalla: {x_1,x_2,...,x_n}
-* Parametrisoitu joukko: {x | x in \N}
+* Niiden alkioiden x joukko, joille pätee p(x): {x | p(x)}
+* Niiden joukon A alkioiden x joukko, joille pätee p(x): {x \in A | p(x)}
+* Joukon A alkioiden x kuvajoukko funktiolle f: {f(x) | x in A}
   * Esim. parillisten kokonaislukujen joukko: {2x | x in \Z}
 * Suljettu väli: [a,b]
 * Avoin väli: ]a,b[
 * Puoliavoin väli:
-  * oikealta voin väli: [a,b[
-  * vasemmalta voin väli: ]a,b]
+  * oikealta avoin väli: [a,b[
+  * vasemmalta avoin väli: ]a,b]
 
-Numeerinen joukko    | Symboli
-------------------------------
-Luonnolliset luvut   | \N 
-Kokonaisluvut        | \Z 
-Realiluvut           | \R 
-Rationaaliluvut      | \Q 
-Irrationaaliluvut    | \R \m \Q 
-Kompleksiluvut       | \C
-Algebralliset luvut  | \A 
+Numeerisia joukkoja:
+* Kokonaisluvut: \Z 
+* Luonnolliset luvut, positiiviset kokonaisluvut: \N
+* Ei-negatiiviset kokonaisluvut: NN_0
+* Realiluvut: \R 
+* Rationaaliluvut: \Q 
+* Irrationaaliluvut: \R \m \Q 
+* Kompleksiluvut: \C
+* Algebralliset luvut: \A 
 
 Operaatioita:
 * Kuuluu joukkoon: x \in A
