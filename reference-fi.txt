@@ -103,16 +103,28 @@ Aritmeettisia funktioita
 * logaritmi: log x
 * a-kantainen logaritmi: log_a x
 
-Sekalaisia
-----------
-
-* x on y:n tekijä: x | y
-* x ei ole y:n tekijä: x !| y
+Reaaliluvut
+-----------
 
 * ääretön: infty, \8
 * plus ääretön: +infty, +\8
 * miinus ääretön: -infty, -\8
+* lähin kokonaisluku: round x 
+* pienin kokonaisluku, joka >= x: ceil x
+* suurin kokonaisluku, joka <= x: floor x
+* x on y:n tekijä: x | y
+* x ei ole y:n tekijä: x !| y
 
+Kompleksiluvut
+--------------
+
+* Imaginääriyksikkö, (0, 1) \in \C: i
+* Kompleksiluku (x, y): x+yi
+* Luvun z = x + iy liittoluku eli kompleksikonjugaatti: barz = x - iy
+* Luvun z pituus eli moduli: |z|
+* Luvun z:n imaginaariosa: Im z
+* Luvun z:n reaaliosa: Re z
+* Luvun z vaihekulma eli argumentti: arg z
 
 Loogisia operaatioita
 ---------------------
