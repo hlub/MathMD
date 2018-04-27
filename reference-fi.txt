@@ -176,20 +176,23 @@ Operaatioita:
 * Avoin osajoukko: A \subo B
 * Suljettu osajoukko: A subc B
 * Pienin yläraja: \sup A
-* suurin alaraja: \inf A
-* pienin luku: \min A
-* suurin luku: \max A
-* alkioiden lukumäärä: n(A)
+* Suurin alaraja: \inf A
+* Pienin luku: \min A
+* Suurin luku: \max A
+* Alkioiden lukumäärä: n(A)
 * Ristitulo: A \x B
-* yhdiste: A \u B
-* leikkaus: A \i B
-* mahtavuus, joukon koko: |A|
+* Yhdiste: A \u B
+* Leikkaus: A \i B
+* Erotus: A \m B
+* Mahtavuus, joukon koko: |A|
 
-Kvanttoreita:
-* olemassaolo: exists x, \e x 
-* yksikäsitteisyys: exists! x, \e! x 
-* todo !exists, !\e x 
-* universaali, kaikilla: forall x, \a x 
+Kvanttoreista:
+* Olemassaolo: exists x, \e x 
+* Ei ole olemassa: !exists, !\e x 
+* Yksikäsitteisyys: exists! x, \e! x 
+* Universaali, kaikilla: forall x, \a x 
+* On olemassa x, jolle pätee p(x): \e x p(x)
+* Kaikilla x:n arvoilla pätee p(x): \a x p(x)
 
 Kuvaukset ja funktiot
 ---------------------
