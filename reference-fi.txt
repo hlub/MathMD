@@ -102,6 +102,7 @@ Aritmeettisia funktioita
 * eksponenttifunktio: e^x
 * logaritmi: log x
 * a-kantainen logaritmi: log_a x
+* luonnollinen logaritmi: ln x
 
 Reaaliluvut
 -----------
