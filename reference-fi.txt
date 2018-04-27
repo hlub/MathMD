@@ -137,27 +137,6 @@ negaatio      | !a
 implikaatio   | a --> b, b <-- a
 ekvivalenssi  | a <--> b
 
-Geometria
----------
-
-Geometrian symboleja:
-* Yhdensuuntaiset: l parallel m, l || m 
-* Ei yhdensuuntaiset: l nparallel m, l |\| m 
-* Kohtisuorat: l \perp m, l -|- m 
-* Kuviot yhdenmuotoiset: a sim b, a ~ b 
-* Kuviot yhtenevät: a cong b, a ~= b 
-* Kulma: angle ABC, kulma ABC 
-
-Vektorimerkintöjä:
-* Suuntajana, vektori: <AB> 
-* Vektori: <a>
-* Vektorin pituus, normi: ||a||, ||<a>||
-* Pistetulo: a . b
-* Ristitulo: a times b, a \x b
-* Sisätulo: <x,y>
-* Saman suuntaiset: a >|> b
-* Vastakkaissuuntaiset: a >|< b
-* x:n suuntainen yksikkövektori: x^@, x/||x||
 
 Joukko-oppi
 -----------
@@ -235,6 +214,30 @@ Todennäköisyyslaskennasta ja jakaumista:
 * normaalijakauma: N(~m,~s) 
 * verrannollinen: x ~~ y, x propto y
 * noudattaa jakaumaa: X ~ Y 
+
+
+Geometria
+---------
+
+Geometrian symboleja:
+* Yhdensuuntaiset: l parallel m, l || m 
+* Ei yhdensuuntaiset: l nparallel m, l |\| m 
+* Kohtisuorat: l \perp m, l -|- m 
+* Kuviot yhdenmuotoiset: a sim b, a ~ b 
+* Kuviot yhtenevät: a cong b, a ~= b 
+* Kulma: angle ABC, kulma ABC 
+
+Vektorimerkintöjä:
+* Suuntajana, vektori: <AB> 
+* Vektori: <a>
+* Vektorin pituus, normi: ||a||, ||<a>||
+* Pistetulo: a . b
+* Ristitulo: a times b, a \x b
+* Sisätulo: <x,y>
+* Saman suuntaiset: a >|> b
+* Vastakkaissuuntaiset: a >|< b
+* x:n suuntainen yksikkövektori: x^@, x/||x||
+
 
 Vektorit ja matriisit
 ---------------------
