@@ -211,13 +211,14 @@ Todennäkösyyslaskenta
 Todennäköisyyslaskennasta ja jakaumista:
 * satunnaismuuttuja: X 
 * A:n todennäköisyys: P(A) 
-* todennäköisyys ehdollinen B:llä: P(A | B) 
-* komplementtitapahtuma: A^c 
+* A:n todennäköisyys ehdollinen B:llä: P(A | B) 
+* A:n komplementtitapahtuma: A^c 
 * x:n keskiarvo: mean(x)
 * X:n odotusarvo: EX, E(X), ~m_X 
 * X:n keskihajonta: DX, D(X), ~s_X 
 * X:n varianssi: D^2(X), \sigma^2_X
-* normaalijakauma: N(~m,~s) 
+* normaalijakauma: N(~m,~s^2)
+* normitettu normaalijakauma: N(0,1)
 * verrannollinen: x ~~ y, x propto y
 * noudattaa jakaumaa: X ~ Y 
 
