@@ -278,10 +278,22 @@ Esimerkkejä:
 Derivointi
 ----------
 
-Derivaattaa merkitään isolla D-kirjaimella derivaatan edessä. 
-Jos halutaan määritellä, minkä muuttujan suhteen derivaatta on, lisätään tämä muuttuja heti D:n jälkeen.
-Esimerkiksi x:n suhteen derivoitu x+y merkitään Dx x+y.
-Oletuksena on, että derivaattaan lasketaan kuuluvaksi kaikki D:n jälkeen tuleva. Jos derivaatta esiintyy kaavassa, sen voi erotella muista sulkein.
+Derivaattoista ja derivaattafunktioiista käytetään eri notaatioita yhteydestä riippuen.
+
+Funktion f:
+* derivaattafunktio: Df, f^(1), f'
+* toinen derivaattafunktio: D^2f, f^(2), f''
+* n:s derivaattafunktio: D^nf, f^(n)
+* derivaatta pisteessä x: f'(x), Df(x), f^(1)(x)
+* toinen derivaatta pisteessä x: f''(x), D^2f(x), f(2)(x)
+* n:s derivaatta pisteessä x: D^nf(x), f^(n)(x)
+* derivaatta x:n suhteen: Dx f, D_x f, df/dx
+* toinen derivaatta x:n suhteen: D^2_x f, D^2x f, d^2f/dx^2 
+* derivaatta x:n suhteen pisteessä a: df(a)/dx, df/dx(a)
+* toinen derivaatta x:n suhteen pisteessä a: D^2_x f(a), d^2f(a)/dx^2, d^2f/dx^2(a)
+
+Huom: Notaatiossa f^(1), f^(2). ..., f^(n) sulut ovat tärkeät. Niillä erotetaan derivaatat ja esimerkiksi f^2 sekä f^{-1} toisistaan.
+
 
 Indeksijoukolliset operaattorit
 -------------------------------
